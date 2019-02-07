@@ -1,0 +1,1 @@
+../../../../AdColony/AdColony.framework/Headers/AdColonyUserMetadata.h

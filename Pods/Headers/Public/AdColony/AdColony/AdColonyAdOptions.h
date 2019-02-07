@@ -1,0 +1,1 @@
+../../../../AdColony/AdColony.framework/Headers/AdColonyAdOptions.h

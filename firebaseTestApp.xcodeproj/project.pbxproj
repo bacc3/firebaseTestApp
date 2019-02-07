@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD5D6A27C3265EE594675F88 /* libPods-firebaseTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86146A0DFDD30D90F1210DDD /* libPods-firebaseTestApp.a */; };
 		D91AFDA6220AF0B1001220E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D91AFDA5220AF0B1001220E8 /* AppDelegate.m */; };
 		D91AFDA9220AF0B1001220E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D91AFDA8220AF0B1001220E8 /* ViewController.m */; };
 		D91AFDAC220AF0B1001220E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91AFDAA220AF0B1001220E8 /* Main.storyboard */; };
 		D91AFDAE220AF0B2001220E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91AFDAD220AF0B2001220E8 /* Assets.xcassets */; };
 		D91AFDB1220AF0B2001220E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91AFDAF220AF0B2001220E8 /* LaunchScreen.storyboard */; };
 		D91AFDB4220AF0B2001220E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D91AFDB3220AF0B2001220E8 /* main.m */; };
+		D91AFDBB220AF145001220E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D91AFDBA220AF145001220E8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		848A7474723158853850F56C /* Pods-firebaseTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebaseTestApp/Pods-firebaseTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		86146A0DFDD30D90F1210DDD /* libPods-firebaseTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-firebaseTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91AFDA1220AF0B1001220E8 /* firebaseTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91AFDA4220AF0B1001220E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D91AFDA5220AF0B1001220E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		D91AFDB0220AF0B2001220E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D91AFDB2220AF0B2001220E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91AFDB3220AF0B2001220E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D91AFDBA220AF145001220E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F05AE2A9A7C914A58D66DEA5 /* Pods-firebaseTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebaseTestApp/Pods-firebaseTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5D6A27C3265EE594675F88 /* libPods-firebaseTestApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		089F5DC1D430916A1ADAC580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86146A0DFDD30D90F1210DDD /* libPods-firebaseTestApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		102E28AA0D3ED02E7294FDD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F05AE2A9A7C914A58D66DEA5 /* Pods-firebaseTestApp.debug.xcconfig */,
+				848A7474723158853850F56C /* Pods-firebaseTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D91AFD98220AF0B1001220E8 = {
 			isa = PBXGroup;
 			children = (
 				D91AFDA3220AF0B1001220E8 /* firebaseTestApp */,
 				D91AFDA2220AF0B1001220E8 /* Products */,
+				102E28AA0D3ED02E7294FDD1 /* Pods */,
+				089F5DC1D430916A1ADAC580 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +92,7 @@
 				D91AFDAD220AF0B2001220E8 /* Assets.xcassets */,
 				D91AFDAF220AF0B2001220E8 /* LaunchScreen.storyboard */,
 				D91AFDB2220AF0B2001220E8 /* Info.plist */,
+				D91AFDBA220AF145001220E8 /* GoogleService-Info.plist */,
 				D91AFDB3220AF0B2001220E8 /* main.m */,
 			);
 			path = firebaseTestApp;
@@ -78,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D91AFDB7220AF0B2001220E8 /* Build configuration list for PBXNativeTarget "firebaseTestApp" */;
 			buildPhases = (
+				7532DA056822CB79F0C423F1 /* [CP] Check Pods Manifest.lock */,
 				D91AFD9D220AF0B1001220E8 /* Sources */,
 				D91AFD9E220AF0B1001220E8 /* Frameworks */,
 				D91AFD9F220AF0B1001220E8 /* Resources */,
+				6C65B5C38A6699915D9D8EB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,12 +158,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91AFDB1220AF0B2001220E8 /* LaunchScreen.storyboard in Resources */,
+				D91AFDBB220AF145001220E8 /* GoogleService-Info.plist in Resources */,
 				D91AFDAE220AF0B2001220E8 /* Assets.xcassets in Resources */,
 				D91AFDAC220AF0B1001220E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C65B5C38A6699915D9D8EB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-firebaseTestApp/Pods-firebaseTestApp-resources.sh",
+				"${PODS_ROOT}/CocoaSoundCloudUI/SoundCloud.bundle",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/youtube-ios-player-helper/youtube-ios-player-helper/Assets.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SoundCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMOAuth2ViewTouch.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firebaseTestApp/Pods-firebaseTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7532DA056822CB79F0C423F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-firebaseTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D91AFD9D220AF0B1001220E8 /* Sources */ = {
@@ -204,9 +289,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -220,10 +306,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$PROJECT_DIR/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -263,9 +355,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -273,9 +366,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$PROJECT_DIR/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -283,9 +383,11 @@
 		};
 		D91AFDB8220AF0B2001220E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05AE2A9A7C914A58D66DEA5 /* Pods-firebaseTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FNZT3SC77H;
 				INFOPLIST_FILE = firebaseTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +401,11 @@
 		};
 		D91AFDB9220AF0B2001220E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 848A7474723158853850F56C /* Pods-firebaseTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FNZT3SC77H;
 				INFOPLIST_FILE = firebaseTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
